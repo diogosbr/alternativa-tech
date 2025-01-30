@@ -4,95 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alternativa Tech</title>
-    <style>
-        /* Paleta de cores */
-        :root {
-            --azul-principal: #007BFF;
-            --cinza-escuro: #1A1F36;
-            --cinza-claro: #AAB2C3;
-            --branco: #FFFFFF;
-            --preto: #000000;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--cinza-claro);
-            color: var(--cinza-escuro);
-        }
-
-        header {
-            background-color: var(--cinza-escuro);
-            color: var(--branco);
-            padding: 2em 0;
-            text-align: center;
-        }
-
-        header img {
-            max-width: 150px;
-            margin-bottom: 10px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: var(--azul-principal);
-            padding: 1em 0;
-        }
-
-        nav a {
-            color: var(--branco);
-            padding: 0.5em 1em;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: var(--cinza-escuro);
-            border-radius: 5px;
-        }
-
-        section {
-            padding: 2em;
-            text-align: center;
-        }
-
-        section h2 {
-            color: var(--azul-principal);
-            margin-bottom: 1em;
-        }
-
-        footer {
-            background-color: var(--cinza-escuro);
-            color: var(--branco);
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        .cta {
-            background-color: var(--azul-principal);
-            color: var(--branco);
-            padding: 1em;
-            margin: 2em auto;
-            width: 50%;
-            border-radius: 10px;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .cta:hover {
-            background-color: var(--cinza-escuro);
-            color: var(--branco);
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link para o CSS externo -->
 </head>
 <body>
 
 <header>
-    <img src="logotipo.png" alt="Logotipo da Alternativa Tech">
-    <h1>Alternativa Tech</h1>
-    <p><em>"Tecnologia inteligente, soluções reais."</em></p>
+    <img src="img/logo.png" alt="Logotipo da Alternativa Tech">
+    <div class="header-content">
+        <h1>Alternativa Tech</h1>
+        <p><em>"Tecnologia inteligente, soluções reais."</em></p>
+    </div>
 </header>
 
 <nav>
@@ -113,20 +34,32 @@
 </section>
 
 <section id="services">
-    <h2>Serviços</h2>
-    <ul style="list-style: none; padding: 0;">
-        <li>✔ Desenvolvimento Web</li>
-        <li>✔ Automação de Processos</li>
-        <li>✔ Consultoria em Tecnologia</li>
-        <li>✔ Soluções Personalizadas</li>
-    </ul>
+    <h2>O que fazemos</h2>
+    <div class="service-container">
+        <div class="service-card">
+            <h3>💻 Desenvolvimento Web</h3>
+            <p>Criamos sites modernos, responsivos e otimizados para a melhor experiência do usuário.</p>
+        </div>
+        <div class="service-card">
+            <h3>⚙️ Automação de Processos</h3>
+            <p>Desenvolvemos soluções que automatizam tarefas repetitivas, aumentando a produtividade.</p>
+        </div>
+        <div class="service-card">
+            <h3>📊 Consultoria em Tecnologia</h3>
+            <p>Orientamos empresas na escolha das melhores tecnologias para seus negócios.</p>
+        </div>
+        <div class="service-card">
+            <h3>🔧 Soluções Personalizadas</h3>
+            <p>Projetamos soluções sob medida para as necessidades específicas de cada cliente.</p>
+        </div>
+    </div>
     <div class="cta">Entre em contato para saber mais!</div>
 </section>
 
 <section id="contact">
     <h2>Contato</h2>
-    <p>📧 Email: <a href="mailto:diosobr@gmail.com">contato@alternativatech.com</a></p>
-    <p>📞 Telefone: (73) 991919213</p>
+    <p>📧 Email: <a href="mailto:contato@alternativatech.com">contato@alternativatech.com</a></p>
+    <p>📞 Telefone: (73) 99191-9213</p>
 </section>
 
 <footer>
